@@ -1,0 +1,146 @@
+.main_dates {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: rgb(234, 244, 253);   
+    padding: 25px; 
+    
+  }
+  
+  .imp_dates_heading {
+    font-size: 1.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(18, 130, 153);
+    padding: 5px;
+    text-align: left;
+  }
+  
+  
+  
+  .imp_dates_heading hr {
+    width: 300px;
+    color: black;
+    height: 2px;
+    background-color: black;
+  }
+  
+ 
+  .dates,
+  .dates2 {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0px 10px 25px 0px black;
+    width: 170px;
+    height: 115px;
+    font-size: 1.2rem;
+  }
+  
+  .dates {
+    background-color: #e3e3e3;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .dates2 {
+    background-color: #F6F6F2;
+    margin-top: 20px;
+    text-align: center;
+    margin-top: 25px; 
+    margin-left: auto; 
+    margin-right: auto;
+  }
+  
+  .dates h3,
+  .dates2 h3 {
+    font-family: sans-serif;
+    color: rgb(33, 33, 111);
+  }
+  
+  .dates p,
+  .dates2 p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: blue;
+  }
+  
+  
+  .dates_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    padding-left: 15px; 
+  }
+  
+  @media (min-width: 768px) {
+    .main_dates {
+        padding-left: 50px;
+    }
+    .dates_container {
+        grid-template-columns: 1fr 1fr; 
+        padding-left: 0;
+    }
+    .imp_dates_heading hr {
+        width: 300px; 
+    }
+    
+}
+
+
+@media (min-width: 1200px) {
+    .main_dates {
+        padding-left: 50px; 
+    }
+    .dates_container {
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        padding-left: 0;
+    }
+
+    .dates2 {
+        margin-top: 40px;
+    }
+}
+@media (max-width: 767px) {
+    .imp_dates_heading {
+        font-size: 1.1em; 
+    }
+    .imp_dates_heading hr {
+        width: 250px; 
+    }
+
+    .dates,
+    .dates2 {
+        font-size: 1rem; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .imp_dates_heading {
+        font-size: 1.2em; 
+    }
+    .imp_dates_heading hr {
+        width: 270px; 
+    }
+
+    .dates,
+    .dates2 {
+        font-size: 1.1rem; 
+    }
+}
+
+  .dates:hover {
+    transform: translateY(-17px);
+    transition: transform 300ms;
+    cursor: pointer;
+  }
+  
+  .dates2:hover {
+    transform: translateY(-14px);
+    transition: transform 200ms;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,140 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: rgb(212, 235, 255);
+    padding: 25px;
+}
+
+.topics_heading {
+    font-size: 1.6em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(35, 89, 100);
+    padding: 5px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.topics_heading hr {
+    width: 120px;
+    margin-left: 20px; 
+    color: black;
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+
+.topics {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: #dfdfdf;
+    box-shadow: 0px 10px 25px 0px black;
+}
+
+.topics h3 {
+    font-family: sans-serif;
+    color: rgb(7, 60, 175);
+}
+
+.topics ul {
+    font-family: Tahoma, sans-serif;
+    font-weight: 500;
+    color: rgb(0, 119, 121);
+    list-style-type: square;
+    padding-left: 20px; 
+}
+
+.topics2 {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: #F6F6F2;
+    box-shadow: 0px 10px 25px 0px black;
+}
+
+.topics2 h3 {
+    font-family: sans-serif;
+    color: rgb(7, 60, 175);
+}
+
+.topics2 ul {
+    font-family: Tahoma, sans-serif;
+    font-weight: 500;
+    color: rgb(0, 119, 121);
+    list-style-type: square;
+    padding-left: 20px; 
+}
+
+.topics3 {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: #e3e3e3;
+    box-shadow: 0px 10px 25px 0px black;
+}
+
+.topics3 h3 {
+    font-family: sans-serif;
+    color: rgb(7, 60, 175);
+}
+
+.topics3 ul {
+    font-family: Tahoma, sans-serif;
+    font-weight: 500;
+    color: rgb(0, 119, 121);
+    list-style-type: square;
+    padding-left: 20px; 
+}
+
+.topics_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between; 
+}
+@media (max-width: 767px) {
+    .topics,
+    .topics2,
+    .topics3 {
+        font-size: 1rem; 
+        width: calc(100% - 30px);
+    }
+}
+
+@media (min-width: 768px) {
+    .topics,
+    .topics2,
+    .topics3 {
+        
+        width: calc(50% - 100px); 
+    }
+}
+
+@media (min-width: 1200px) {
+    .topics,
+    .topics2,
+    .topics3 {
+        width: calc(33.33% - 100px); 
+    }
+} 
+
+.topics:hover{
+    transform: translateX(37px);
+    transition-property: transform;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+
+.topics2:hover{
+    transform: translateX(-37px);
+    transition-property: transform;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
